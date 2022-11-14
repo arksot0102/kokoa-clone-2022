@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   padding-top: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .alt-header :last-child {
   justify-content: flex-end;
