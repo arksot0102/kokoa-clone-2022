@@ -1,0 +1,25 @@
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  /*child를 100/n%값으로 폭을 주고 father에 flex-wrap:wrap;을 주면 n으로 분배되고 아래로 내려감*/
+  justify-content: start;
+  padding-bottom: 20px;
+  border-bottom: var(--main-border);
+}
+/*폭이 서로 다른 div 를 분배할 때는 space between이 아니라 center에 두고 하위 class(분배할 div)의 폭을 n/100으로 주면 됨*/
+
+.icon-row__icon {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+}
+.icon-row__icon i {
+  font-size: 35px;
+}
+.icon-row__icon span {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}

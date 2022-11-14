@@ -1,0 +1,64 @@
+.user-component {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.user-component,
+.user-component :first-child {
+  /*여기서 조금 혼동이 있을 수 있는데, image와 title이 이 father로 삼는 user-component__column(first child of user-component)에도 align-item:center가 필요하고 두개의 column끼리도 align-item:center가 필요함*/
+  display: flex;
+  align-items: center;
+}
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 35%;
+  margin-right: 20px;
+}
+.user-component__title {
+  font-weight: 500;
+  font-size: 18px;
+}
+.user-component__subtitle {
+  margin-top: 8px;
+  color: var(--font-grey);
+  display: flex;
+  align-items: center;
+}
+/*기본 틀을 변형시키고 싶다면 이 위의 내용처럼 기본틀을 만들고 다른 class를 추가로 적용하면 됨*/
+
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+}
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+}
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+.user-component__column:last-child {
+  color: var(--font-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-component__time {
+  display: block;
+  margin-bottom: 5px;
+}
+.alert {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  display: block;
+  color: tomato;
+  border: 1px solid tomato;
+  border-radius: 50%;
+  margin-left: 4px;
+}

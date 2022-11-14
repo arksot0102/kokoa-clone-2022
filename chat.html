@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>settings</title>
+  </head>
+  <body id="chat-screen">
+    <div class="chat-screen__status">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!--Battery Icon-->
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <!--Lightning Icon-->
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <!--버튼으로 이전화면, 이후화면-->
+          <i class="fa-solid fa-chevron-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Sara</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <i class="fa-solid fa-bars fa-lg"></i>
+      </div>
+    </header>
+    <main class="main-screen main-chat">
+      <div class="chat_timestamp">Tuesday, June 30, 2022</div>
+
+      <div class="message-row">
+        <img src="images/ko.jfif" />
+        <div class="message-row__content">
+          <span class="message__author">Sara</span>
+          <div class="message__info">
+            <span class="message__bubble">I'll give it you later</span>
+            <span class="message__time">13:17</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Okay thx!</span>
+            <span class="message__time">13:17</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+        <button class="send-btn">
+          <i class="fa-solid fa-arrow-up-long fa-lg"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/4b9482da3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

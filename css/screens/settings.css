@@ -1,0 +1,29 @@
+.settings__setting {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 20px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.settings__setting__column i {
+  width: 30px;
+  font-size: 20px;
+}
+
+.settings__setting__column h6 {
+  font-size: 18px;
+  color: var(--font-grey);
+}
+.settings-list :last-child {
+  border-bottom: none;
+}
+.alt-header__column {
+  display: flex;
+  align-items: center;
+}
+.alt-header__column > i {
+  margin-left: 20px;
+}

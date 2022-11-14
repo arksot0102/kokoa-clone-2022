@@ -1,0 +1,39 @@
+.status-bar {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: fixed;
+  background-color: white;
+  /*status-bar와 header-screen이 겹치는 현상이 있으신 분들,
+position: sticky; 로 해결해보십시오. (status-bar에 설정)
+sticky 속성은 상, 하, 좌, 우 주어진 값이 임계치에 도달할 경우 그 자리에 고정되는 속성이라고 합니다.
+  */
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+}
+.status-bar__column {
+  width: 33%;
+  font-weight: 500;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+  /*여기 잘 이해가 안됨 까먹은듯?
+    왜 status-bar__column:first-child span으로 연결되는거지?
+    전에 강의 한번 다시 봐야할듯?*/
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+  /*니꼬 강의에서는 그냥 fa-battery-full이라 그대로 옮겼는데 내꺼는
+    fa-solid fa-battery-full인데 뒤에꺼만 옮겨도 적용되네연?*/
+}

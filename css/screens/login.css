@@ -1,0 +1,64 @@
+.Welcome-header {
+  padding-top: 110px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Welcome-header__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.Welcome-header__text {
+  width: 70%;
+  opacity: 0.7;
+  font-weight: 400;
+  margin-bottom: 90px;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /*css not 기능 알아두면 쓸데가 많음
+    */
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+  /*여기서 왜 login-form input::placeholder:focus {
+        border-color: rgba(0,0,0,0.4);
+    }
+    는 적용이 안되는가??
+    */
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  border-radius: 4px;
+  cursor: pointer;
+  /*마우스 커서 올리면 포인터로 모양 바꿔주는거
+    */
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}

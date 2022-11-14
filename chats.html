@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat-sara - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!--Battery Icon-->
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <!--Lightning Icon-->
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fa-solid fa-gear fa-lg"></i></a
+        ></span>
+      </div>
+    </header>
+    <main class="main-screen chat-box">
+      <!--1번-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <image
+            src="images/kakao.png"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">KakaoTalk</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kokoa Account info
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">21:22</span>
+          <div class="badge">1</div>
+        </div>
+        <!--div아래에 A라는 class를 가진 div를 2 개 만들고 싶을 때
+        .user-component__column*2-->
+      </div>
+      <!--2번-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <image
+            src="images/Lisa.jfif"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Lisandro katherine</h4>
+            <h6 class="user-component__subtitle">Ill check out later</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">20:57</span>
+          <div class="badge">4</div>
+        </div>
+      </div>
+      <!--3번-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <image
+            src="images/Tom.jfif"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Tomitomi</h4>
+            <h6 class="user-component__subtitle">maybe around tuesday??</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">17:43</span>
+          <div class="badge">2</div>
+        </div>
+      </div>
+      <!--4번-->
+      <div class="user-component">
+        <div class="user-component__column">
+          <image
+            src="images/smile.png"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Smile Pay</h4>
+            <h6 class="user-component__subtitle">
+              [Smile Pay] New payment method ...
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">16:33</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+      <!--5번-->
+      <a href="chat.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <image
+              src="images/ko.jfif"
+              class="user-component__avatar user-component__avatar"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Sara</h4>
+              <h6 class="user-component__subtitle">Okay thx!</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">13:17</span>
+            <!--<div class="badge">2</div>-->
+          </div>
+        </div></a
+      >
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <div class="nav__notification badge">8</div>
+            <i class="fa-solid fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__notification2"></div>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4b9482da3b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
